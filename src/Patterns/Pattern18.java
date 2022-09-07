@@ -2,21 +2,23 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class Pattern9 {
+public class Pattern18 {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner =new Scanner(System.in);
         int n=scanner.nextInt();
         int i=1;
         while (i<=n)
         {
             int j=1;
-            while (j<=(n-i+1))
+            int value=i;
+            while (j<=i)
             {
-                System.out.print("* ");
+                System.out.print(value);
+                value++;
                 j++;
             }
-            i++;
             System.out.println();
+            i++;
         }
     }
 }
